@@ -21,6 +21,11 @@ echo "* http://zgadzaj.com/how-to-install-php-53-and-52-together-on-ubuntu-1204"
 echo "----------------------------------"
 echo ""
 
+
+echo ""
+echo "Compiling PHP ..."
+echo "---------------------------------"
+
 # current directory
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 
