@@ -20,11 +20,17 @@ git config --global user.name $USER_FULL_NAME
 
 echo "Setting git colors ....";
 echo "----------------------------------"
+
 git config --global color.branch auto
 git config --global color.diff auto
 git config --global color.interactive auto
 git config --global color.status auto
 git config --global color.ui true
+
+echo "Installing custom bashrc ...";
+echo "----------------------------------"
+
+cp .bashrc ~/.bashrc
 
 echo "----------------------------------"
 echo "DONE"
