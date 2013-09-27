@@ -28,7 +28,7 @@ echo "---------------------------------"
 export PACKAGES="mysql-server mysql-client" 
 export PACKAGES="$PACKAGES nginx php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt"
 export PACKAGES="$PACKAGES php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy"
-export PACKAGES="$PACKAGES php5-xmlrpc php5-xsl php5-xcache php5-fpm php5-cli php5-cgi siege"
+export PACKAGES="$PACKAGES php5-xmlrpc php5-xsl php5-xcache php5-fpm php5-cli php5-cgi siege acl postfix"
 
 sudo apt-get install $PACKAGES -y
 
