@@ -3,7 +3,7 @@
 echo "Installing Ubuntu essentials ... "
 echo "----------------------------------"
 
-sudo apt-get install git mc make gcc -y
+sudo apt-get install git mc make gcc curl -y
 
 
 echo "Configuring GIT ..."
