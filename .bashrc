@@ -119,34 +119,22 @@ else # normal
     GIT_PS1_SHOWSTASHSTATE=true
     GIT_PS1_SHOWUNTRACKEDFILES=true
     GIT_PS1_SHOWUPSTREAM="auto"
-    GIT='\[\e[1;31m\]$(__git_ps1 " (branch:%s)") \[\e[m\]'
+    GIT='\[\e[1;31m\]$(__git_ps1 "(branch: %s)") \[\e[m\]'
   fi
 
   command -v rvm-prompt > /dev/null 2>&1 &&  RVM=" \[\e[1;33m\](\$(rvm-prompt i v g))\[\e[m\]"
 
-  PS1="\[\e[1;32m\]\u\[\e[m\] @ \h \[\e[1;34m\]\w\[\e[m\] $GIT"
-  PS1+='\n\[\e[1;30m\]\!\[\e[m\] (\t) \[\e[1;32m\]\$\[\e[m\] '
+  PS1="\[\e[1;34m\]\w\[\e[m\] $GIT\[\e[1;31m\](processes: \j) \[\e[m\]"
+  PS1+='\n\[(\e[1;32m\]\u\[\e[m\] @ \H) \[\e[1;34m\]$(tty)\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 fi
 #aliases
-alias ls='ls -h --color=auto'
-alias root='sudo su'
-alias god='sudo su'
-alias quit='sudo killall -9'
-
-
-alias offline='sudo killall -9 skype;sudo killall -9 thunderbird;sudo killall -9 pidgin;'
+alias ls='ls -h -all --color=auto'
 
 alias reboot='sudo reboot'
 
 alias edit='gedit'
-alias watch='tail -f'
 
 alias top='htop'
 
-#apt aliases
-alias install='sudo apt-get install'
-alias uninstall='sudo apt-get remove'
-alias reinstall='sudo apt-get --reinstall install'
-alias update='sudo apt-get update'
-
 export GIT_SSL_NO_VERIFY=1
+export PATH=$PATH:/home/sorin/Apps/android-sdk/sdk/platform-tools:/home/sorin/Apps/android-sdk/sdk/tools
