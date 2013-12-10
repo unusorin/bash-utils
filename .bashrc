@@ -125,7 +125,7 @@ else # normal
   command -v rvm-prompt > /dev/null 2>&1 &&  RVM=" \[\e[1;33m\](\$(rvm-prompt i v g))\[\e[m\]"
 
   PS1="\[\e[1;34m\]\w\[\e[m\] $GIT\[\e[1;31m\](processes: \j) \[\e[m\]"
-  PS1+='\n\[(\e[1;32m\]\u\[\e[m\] @ \H) \[\e[1;34m\]$(tty)\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
+  PS1+='\n\[(\e[1;32m\]\u\[\e[m\] δ \H) \[\e[1;34m\]$(tty)\[\e[m\] \[\e[1;32m\]Ξ\[\e[m\] '
 fi
 #aliases
 alias ls='ls -h -all --color=auto'
